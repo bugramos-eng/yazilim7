@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double alis, karoranı, satis;
+            Console.Write("Sayıyı Girin : ");
+            alis = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Kar oranını Girin : ");
+            karoranı = Convert.ToDouble(Console.ReadLine());
+            satis = alis + (alis * karoranı / 100);
+            Console.WriteLine("Satış Fiyatı : {0}", satis);
+            Console.ReadKey();
+        }
+    }
+}
